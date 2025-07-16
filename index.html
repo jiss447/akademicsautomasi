@@ -3,128 +3,193 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CS Otomatis | jawabin.id</title>
+  <title>Akademi CS Otomatis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #111;
       color: #fff;
-      overflow-x: hidden;
     }
-
-    .section {
-      max-width: 800px;
-      margin: 80px auto;
-      padding: 0 20px;
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+    }
+    header img {
+      height: 32px;
+      margin-right: 0.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .main-heading {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .subheading {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .flow-diagram {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .flow-diagram img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .btn-group a {
+      text-decoration: none;
+      font-weight: bold;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+    .btn-wa {
+      background-color: #25D366;
+      color: white;
+    }
+    .btn-discord {
+      background-color: #5865F2;
+      color: white;
+    }
+    section {
+      margin-bottom: 2.5rem;
       opacity: 0;
-      transform: translateY(50px);
-      transition: all 0.8s ease-out;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
     }
-
-    .section.visible {
+    section.visible {
       opacity: 1;
       transform: translateY(0);
     }
-
     h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-      color: #00ffff;
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
-
-    .section h2 span {
-      font-size: 1.8rem;
-      color: #ffa500;
-      margin-right: 8px;
-    }
-
-    p, ul {
-      font-size: 1rem;
-      line-height: 1.7;
-      margin-bottom: 20px;
-    }
-
     ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .check::before {
+    ul li::before {
       content: '✅';
-      margin-right: 8px;
+      margin-right: 0.5rem;
       color: #00ff88;
     }
-
-    .idea::before {
-      content: '💡';
-      margin-right: 8px;
-      color: #ffaa00;
+    .section-image {
+      text-align: center;
+      margin: 2rem 0;
     }
-
-    .cta-buttons {
-      display: flex;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .cta-buttons a {
-      background-color: #25D366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .cta-buttons a.discord {
-      background-color: #5865F2;
-    }
-
-    .cta-buttons a:hover {
-      opacity: 0.8;
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding-bottom: 2rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="https://i.postimg.cc/T2KGcp45/Screenshot-257.png" alt="logo jawabin" />
+  </header>
+  <div class="container">
+    <h1 class="main-heading">💬 Bangun Sistem Customer Service Otomatis Tanpa Coding</h1>
+    <p class="subheading">Tanpa Ribet — Tanpa Skill Teknis — Cocok untuk Pemula, UMKM, dan Pelajar!</p>
 
-  <div class="section" id="kenapa">
-    <h2><span>🔥</span>Kenapa Kelas Ini Berbeda?</h2>
-    <ul>
-      <li class="check">Tanpa skill teknis</li>
-      <li class="check">Langsung praktik dari awal</li>
-      <li class="check">Cocok untuk semua jenis bisnis</li>
-      <li class="check">Materi update + akses seumur hidup</li>
-      <li class="check">Didampingi via WhatsApp & Discord (GRATIS)</li>
-    </ul>
-  </div>
+    <div class="flow-diagram">
+      <img src="https://i.postimg.cc/pdyV8QB9/Whats-App-Image-2025-07-09-at-19-49-05-3.jpg" alt="diagram flow cs" />
+    </div>
 
-  <div class="section" id="belajar">
-    <h2><span>📚</span>Apa yang Akan Kamu Pelajari</h2>
-    <ul>
-      <li class="idea">Bangun sistem CS otomatis & pencatatan keuangan</li>
-      <li class="idea">Semua langkah disusun step-by-step</li>
-      <li class="idea">Belajar dari nol, langsung praktik</li>
-      <li class="idea">Cocok untuk bisnis pribadi atau jasa freelance</li>
-    </ul>
-  </div>
+    <div class="btn-group">
+      <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F" class="btn-wa">📲 Gabung via WhatsApp</a>
+      <a href="https://discord.gg/YgSpW9dm" class="btn-discord">💬 Masuk Komunitas Discord</a>
+    </div>
 
-  <div class="section" id="cta">
-    <h2><span>⚠️</span>Siap Gabung?</h2>
-    <p>Langsung daftar dan dapatkan akses ke semua materi + komunitas aktif!</p>
-    <div class="cta-buttons">
-      <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F">Gabung via WhatsApp</a>
-      <a href="https://discord.gg/YgSpW9dm" class="discord">Gabung Discord</a>
+    <section>
+      <h2>🔥 Kenapa Kelas Ini Berbeda?</h2>
+      <ul>
+        <li>Tanpa skill teknis — cocok untuk semua kalangan</li>
+        <li>Langsung praktik dari awal — bukan teori doang</li>
+        <li>Support bisnis kecil hingga jasa freelance</li>
+        <li>Akses seumur hidup & materi selalu di-update</li>
+        <li>Didampingi via WhatsApp & Discord — GRATIS</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📚 Apa yang Akan Kamu Pelajari?</h2>
+      <ul>
+        <li>Belajar dari nol: tidak perlu pengalaman coding sama sekali</li>
+        <li>Langkah demi langkah: semua panduan dijelaskan secara praktis</li>
+        <li>Bangun sistem CS otomatis dengan tool seperti n8n</li>
+        <li>Catat keuangan dan operasional bisnis secara otomatis</li>
+        <li>Cocok untuk kebutuhan pribadi, UMKM, atau freelance</li>
+      </ul>
+    </section>
+
+    <div class="section-image">
+      <img src="https://i.postimg.cc/pdyV8QB9/Whats-App-Image-2025-07-09-at-19-49-05-3.jpg" alt="diagram alur sistem" />
+    </div>
+
+    <section>
+      <h2>🚀 Siapa yang Cocok Ikut?</h2>
+      <ul>
+        <li>Pemilik UMKM yang ingin hemat waktu & tenaga</li>
+        <li>Freelancer yang ingin tambah skill digital</li>
+        <li>Pelajar yang ingin belajar skill masa depan</li>
+        <li>Siapa pun yang ingin kerja lebih efisien pakai sistem</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>⚠️ Kelas Ini Bukan untuk Kamu Kalau…</h2>
+      <ul>
+        <li>Kamu hanya ingin "lihat-lihat"</li>
+        <li>Tidak siap untuk belajar dan praktik</li>
+        <li>Cari sistem instan tanpa usaha</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🛎️ Pilih Cara Gabung Sesuai Kebutuhanmu</h2>
+      <div class="btn-group">
+        <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F" class="btn-wa">✅ Daftar Kelas Premium via WhatsApp</a>
+        <a href="https://discord.gg/YgSpW9dm" class="btn-discord">💬 Gabung Komunitas di Discord</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>❓ FAQ — Pertanyaan Umum</h2>
+      <ul>
+        <li>Gaptek bisa ikut? ✅ Bisa banget! Kelas ini memang untuk pemula total.</li>
+        <li>Harus pakai laptop? ✅ Iya, karena tools seperti n8n lebih nyaman digunakan di laptop/PC.</li>
+        <li>Akses materi sampai kapan? ✅ Seumur hidup. Bebas belajar kapan saja.</li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      🔗 Powered by: jawabin.id<br />
+      📷 Instagram: @abdul_azizramadhani<br />
+      📞 WhatsApp: 0831-8429-2667
     </div>
   </div>
 
   <script>
-    const sections = document.querySelectorAll('.section');
+    const sections = document.querySelectorAll('section');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -137,6 +202,5 @@
       observer.observe(section);
     });
   </script>
-
 </body>
 </html>
