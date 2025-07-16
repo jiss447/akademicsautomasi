@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akademi CS Otomatis</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -11,184 +11,141 @@
       font-family: 'Poppins', sans-serif;
       background-color: #0f0f0f;
       color: #fff;
-      line-height: 1.6;
-    }
-    header {
+      line-height: 1.7;
       padding: 1rem;
-    }
-    .logo {
-      height: 40px;
     }
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 1rem;
     }
-    .hero {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .hero h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    .hero p {
-      font-size: 1rem;
-      color: #ccc;
-      margin-bottom: 1.5rem;
-    }
-    .hero-img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 1.5rem;
-    }
-    .cta-button {
-      display: inline-block;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      background: linear-gradient(90deg, #25D366, #5865F2);
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-    .learning-section, .join-section, .closing-section, .discord-section {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease;
-      margin-bottom: 2rem;
-    }
-    .learning-section.visible, .join-section.visible, .closing-section.visible, .discord-section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+    h1, h2, h3 {
       color: #fff;
     }
-    .learning-section ul {
-      list-style: none;
-      padding: 0;
+    .subtitle {
+      color: #ccc;
+      font-size: 1.1rem;
     }
-    .learning-section li {
-      margin-bottom: 0.5rem;
-    }
-    .btn-group {
+    .cta {
       display: flex;
-      gap: 1rem;
-      justify-content: center;
       flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
     }
-    .btn-wa {
-      background-color: #25D366;
-      color: white;
+    .cta a {
       padding: 1rem 2rem;
       border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
-    }
-    .btn-discord {
-      background-color: #5865F2;
       color: white;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
+    }
+    .cta .wa { background: #25D366; }
+    .cta .discord { background: #5865F2; }
+    .section {
+      margin: 2rem 0;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+    li {
+      margin-bottom: 0.6rem;
     }
     .divider {
       height: 4px;
       background: linear-gradient(to right, #00bfff, #8a2be2);
       margin: 2rem 0;
     }
-    .closing-section p {
+    .center {
       text-align: center;
-      font-size: 1rem;
-      color: #ccc;
     }
-    .discord-section {
+    .img-fluid {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
+    footer {
+      font-size: 0.9rem;
       text-align: center;
-      margin-bottom: 3rem;
-    }
-    .discord-invite {
-      font-size: 1rem;
-      color: #ccc;
-      margin-bottom: 1rem;
+      color: #999;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://i.postimg.cc/T2KGcp45/Screenshot-257.png" alt="logo jawabin" class="logo" />
-  </header>
+  <div class="container">
+    <header class="section center">
+      <img src="https://i.postimg.cc/T2KGcp45/Screenshot-257.png" alt="Logo Jawabin" style="height:40px;">
+      <h1>💬 Bangun Sistem Customer Service Otomatis Tanpa Coding</h1>
+      <p class="subtitle">Tanpa Ribet — Tanpa Skill Teknis — Cocok untuk Pemula, UMKM, dan Pelajar!</p>
+      <p>Pelajari cara membangun sistem customer service otomatis dan pencatatan bisnis modern tanpa perlu bisa coding!<br>
+      Kelas ini 100% langsung praktik — cocok untuk kamu yang baru mulai atau ingin mempercepat kerja bisnis.</p>
+      <div class="cta">
+        <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F" class="wa">📲 Gabung via WhatsApp</a>
+        <a href="https://discord.gg/YgSpW9dm" class="discord">💬 Masuk Komunitas Discord</a>
+      </div>
+    </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>💬 Bangun Sistem CS Otomatis Tanpa Coding</h1>
-      <p>Tanpa Ribet — Cocok untuk Pemula, UMKM, & Pelajar!</p>
-      <img src="https://i.postimg.cc/pdyV8QB9/Whats-App-Image-2025-07-09-at-19-49-05-3.jpg" alt="Diagram AI CS" class="hero-img" />
-      <a href="https://wa.me/6281234567890" class="cta-button">
-        <span>➡️➡️</span> 📲 bergabung
-      </a>
-    </section>
-
-    <section class="learning-section">
-      <h2>📚 Apa yang Akan Kamu Pelajari?</h2>
+    <section class="section">
+      <h2>🔥 Kenapa Kelas Ini Berbeda?</h2>
       <ul>
-        <li>✅ Kamu gak butuh pengalaman atau skill teknis.</li>
-        <li>✅ Semua sudah disiapkan langkah demi langkah.</li>
-        <li>💡 Materinya langsung praktik — dari nol sampai bisa.</li>
-        <li>✅ Kamu akan belajar cara kerja sistem CS otomatis modern, cocok untuk kebutuhan pribadi, bisnis, atau bahkan jadi jasa.</li>
-        <li>📌 Semua materi hanya dibuka setelah kamu bergabung.</li>
-        <li>❌ Jadi kalau kamu cuma mau lihat-lihat, kelas ini bukan buat kamu.</li>
-        <li>✅ Tapi kalau kamu serius mau belajar & dapet hasil nyata, ini saatnya mulai.</li>
+        <li>✅ Tanpa skill teknis — cocok untuk semua kalangan</li>
+        <li>✅ Langsung praktik dari awal — bukan teori doang</li>
+        <li>✅ Support bisnis kecil hingga jasa freelance</li>
+        <li>✅ Akses seumur hidup & materi selalu di-update</li>
+        <li>✅ Didampingi via WhatsApp & Discord — GRATIS</li>
       </ul>
     </section>
 
+    <section class="section">
+      <h2>📚 Apa yang Akan Kamu Pelajari?</h2>
+      <ul>
+        <li>📌 Belajar dari nol: tidak perlu pengalaman coding sama sekali</li>
+        <li>📌 Langkah demi langkah: semua panduan dijelaskan secara praktis</li>
+        <li>📌 Bangun sistem CS otomatis dengan tool seperti n8n</li>
+        <li>📌 Catat keuangan dan operasional bisnis secara otomatis</li>
+        <li>📌 Cocok untuk kebutuhan pribadi, UMKM, atau freelance</li>
+      </ul>
+    </section>
+
+    <section class="section center">
+      <h2>📊 Ilustrasi Sistem Otomasi Modern</h2>
+      <img src="https://i.postimg.cc/pdyV8QB9/Whats-App-Image-2025-07-09-at-19-49-05-3.jpg" alt="Diagram Sistem Bot" class="img-fluid">
+    </section>
+
+    <section class="section">
+      <h2>🚀 Siapa yang Cocok Ikut?</h2>
+      <ul>
+        <li>✔️ Pemilik UMKM yang ingin hemat waktu & tenaga</li>
+        <li>✔️ Freelancer yang ingin tambah skill digital</li>
+        <li>✔️ Pelajar yang ingin belajar skill masa depan</li>
+        <li>✔️ Siapa pun yang ingin kerja lebih efisien pakai sistem</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>⚠️ Kelas Ini Bukan untuk Kamu Kalau…</h2>
+      <ul>
+        <li>✘ Kamu hanya ingin "lihat-lihat"</li>
+        <li>✘ Tidak siap untuk belajar dan praktik</li>
+        <li>✘ Cari sistem instan tanpa usaha</li>
+      </ul>
+      <p>👉 Tapi kalau kamu serius ingin belajar dan dapat hasil nyata, inilah kelas yang kamu butuhkan!</p>
+    </section>
+
     <div class="divider"></div>
 
-    <section class="join-section">
-      <h2>🔔 Pilih Cara Gabung Sesuai Kebutuhanmu</h2>
-      <div class="btn-group">
-        <a href="https://wa.me/6281234567890" class="btn-wa">✅ Daftar Kelas Premium via WhatsApp</a>
+    <section class="section">
+      <h2>🛎️ Pilih Cara Gabung Sesuai Kebutuhanmu</h2>
+      <p>🎓 Mau Akses Semua Materi & Dapat Pendampingan Premium?<br>👉 Klik tombol WhatsApp di bawah dan daftar sekarang.</p>
+      <p>💬 Mau tanya-tanya dulu & gabung komunitas belajar?<br>👉 Masuk ke komunitas Discord resmi.</p>
+      <div class="cta">
+        <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F" class="wa">✅ Daftar Kelas Premium via WhatsApp</a>
+        <a href="https://discord.gg/YgSpW9dm" class="discord">💬 Gabung Komunitas di Discord</a>
       </div>
     </section>
 
-    <div class="divider"></div>
-
-    <section class="closing-section">
-      <h2>🔔 Gabung Sekarang Sesuai Kebutuhan Kamu</h2>
-      <p>📌 Serius mau belajar dan gabung ke Kelas Premium?<br>
-      Langsung daftar lewat WhatsApp — semua materi lengkap dibuka</p>
-    </section>
-
-    <div class="divider"></div>
-
-    <section class="discord-section">
-      <p class="discord-invite">
-        Belum siap ikut kelas premium?<br>
-        💬 <strong>Gabung Komunitas Diskusi Gratis di Discord</strong> — Klik di bawah ini:
-      </p>
-      <div class="btn-group">
-        <a href="https://discord.gg/Jp2SUG4V" class="btn-discord">💬 Gabung Komunitas di Discord</a>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  </script>
+    <footer>
+      🔗 Powered by: jawabin.id · 📷 Instagram: @abdul_azizramadhani · 📞 WhatsApp: 0831-8429-2667
+    </footer>
+  </div>
 </body>
 </html>
