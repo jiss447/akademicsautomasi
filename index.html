@@ -33,10 +33,37 @@
       color: #00ffff;
     }
 
-    p {
+    .section h2 span {
+      font-size: 1.8rem;
+      color: #ffa500;
+      margin-right: 8px;
+    }
+
+    p, ul {
       font-size: 1rem;
       line-height: 1.7;
       margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .check::before {
+      content: '✅';
+      margin-right: 8px;
+      color: #00ff88;
+    }
+
+    .idea::before {
+      content: '💡';
+      margin-right: 8px;
+      color: #ffaa00;
     }
 
     .cta-buttons {
@@ -66,28 +93,29 @@
 </head>
 <body>
 
-  <!-- Bagian konten yang muncul dengan animasi -->
   <div class="section" id="kenapa">
-    <h2>🔥 Kenapa Kelas Ini Berbeda?</h2>
-    <p>✅ Tanpa skill teknis<br>
-       ✅ Langsung praktik dari awal<br>
-       ✅ Cocok untuk semua jenis bisnis<br>
-       ✅ Materi update + akses seumur hidup<br>
-       ✅ Didampingi via WhatsApp & Discord (GRATIS)
-    </p>
+    <h2><span>🔥</span>Kenapa Kelas Ini Berbeda?</h2>
+    <ul>
+      <li class="check">Tanpa skill teknis</li>
+      <li class="check">Langsung praktik dari awal</li>
+      <li class="check">Cocok untuk semua jenis bisnis</li>
+      <li class="check">Materi update + akses seumur hidup</li>
+      <li class="check">Didampingi via WhatsApp & Discord (GRATIS)</li>
+    </ul>
   </div>
 
   <div class="section" id="belajar">
-    <h2>📚 Apa yang Akan Kamu Pelajari</h2>
-    <p>💡 Bangun sistem CS otomatis & pencatatan keuangan<br>
-       💡 Semua langkah disusun step-by-step<br>
-       💡 Belajar dari nol, langsung praktik<br>
-       💡 Cocok untuk bisnis pribadi atau jasa freelance
-    </p>
+    <h2><span>📚</span>Apa yang Akan Kamu Pelajari</h2>
+    <ul>
+      <li class="idea">Bangun sistem CS otomatis & pencatatan keuangan</li>
+      <li class="idea">Semua langkah disusun step-by-step</li>
+      <li class="idea">Belajar dari nol, langsung praktik</li>
+      <li class="idea">Cocok untuk bisnis pribadi atau jasa freelance</li>
+    </ul>
   </div>
 
   <div class="section" id="cta">
-    <h2>🛎️ Siap Gabung?</h2>
+    <h2><span>⚠️</span>Siap Gabung?</h2>
     <p>Langsung daftar dan dapatkan akses ke semua materi + komunitas aktif!</p>
     <div class="cta-buttons">
       <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F">Gabung via WhatsApp</a>
