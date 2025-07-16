@@ -2,191 +2,179 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Akademi CS Otomatis</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #111;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
       color: #fff;
+      line-height: 1.6;
     }
     header {
-      display: flex;
-      align-items: center;
       padding: 1rem;
     }
-    header img {
-      height: 32px;
-      margin-right: 0.5rem;
+    .logo {
+      height: 40px;
     }
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 2rem;
+      padding: 1rem;
     }
-    .main-heading {
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    .subheading {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .flow-diagram {
+    .hero {
       text-align: center;
       margin-bottom: 2rem;
     }
-    .flow-diagram img {
-      max-width: 100%;
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
+    .hero-img {
+      width: 100%;
       border-radius: 12px;
+      margin-bottom: 1.5rem;
     }
-    .btn-group {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin: 2rem 0;
-    }
-    .btn-group a {
-      text-decoration: none;
-      font-weight: bold;
+    .cta-button {
+      display: inline-block;
       padding: 1rem 2rem;
       border-radius: 8px;
-    }
-    .btn-wa {
-      background-color: #25D366;
+      background: linear-gradient(90deg, #25D366, #5865F2);
       color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1rem;
     }
-    .btn-discord {
-      background-color: #5865F2;
-      color: white;
-    }
-    section {
-      margin-bottom: 2.5rem;
+    .learning-section, .join-section, .closing-section, .discord-section {
       opacity: 0;
       transform: translateY(30px);
       transition: all 0.6s ease;
+      margin-bottom: 2rem;
     }
-    section.visible {
+    .learning-section.visible, .join-section.visible, .closing-section.visible, .discord-section.visible {
       opacity: 1;
       transform: translateY(0);
     }
     h2 {
-      color: #fff;
       font-size: 1.5rem;
       margin-bottom: 1rem;
+      color: #fff;
     }
-    ul {
+    .learning-section ul {
       list-style: none;
-      padding-left: 0;
+      padding: 0;
     }
-    ul li::before {
-      content: '✅';
-      margin-right: 0.5rem;
-      color: #00ff88;
+    .learning-section li {
+      margin-bottom: 0.5rem;
     }
-    .section-image {
-      text-align: center;
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-wa {
+      background-color: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .btn-discord {
+      background-color: #5865F2;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .divider {
+      height: 4px;
+      background: linear-gradient(to right, #00bfff, #8a2be2);
       margin: 2rem 0;
     }
-    .footer {
+    .closing-section p {
       text-align: center;
-      font-size: 0.9rem;
-      padding-bottom: 2rem;
-      color: #aaa;
+      font-size: 1rem;
+      color: #ccc;
+    }
+    .discord-section {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .discord-invite {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://i.postimg.cc/T2KGcp45/Screenshot-257.png" alt="logo jawabin" />
+    <img src="https://i.postimg.cc/T2KGcp45/Screenshot-257.png" alt="logo jawabin" class="logo" />
   </header>
-  <div class="container">
-    <h1 class="main-heading">💬 Bangun Sistem Customer Service Otomatis Tanpa Coding</h1>
-    <p class="subheading">Tanpa Ribet — Tanpa Skill Teknis — Cocok untuk Pemula, UMKM, dan Pelajar!</p>
 
-    <div class="flow-diagram">
-      <img src="https://i.postimg.cc/pdyV8QB9/Whats-App-Image-2025-07-09-at-19-49-05-3.jpg" alt="diagram flow cs" />
-    </div>
-
-    <div class="btn-group">
-      <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F" class="btn-wa">📲 Gabung via WhatsApp</a>
-      <a href="https://discord.gg/YgSpW9dm" class="btn-discord">💬 Masuk Komunitas Discord</a>
-    </div>
-
-    <section>
-      <h2>🔥 Kenapa Kelas Ini Berbeda?</h2>
-      <ul>
-        <li>Tanpa skill teknis — cocok untuk semua kalangan</li>
-        <li>Langsung praktik dari awal — bukan teori doang</li>
-        <li>Support bisnis kecil hingga jasa freelance</li>
-        <li>Akses seumur hidup & materi selalu di-update</li>
-        <li>Didampingi via WhatsApp & Discord — GRATIS</li>
-      </ul>
+  <main class="container">
+    <section class="hero">
+      <h1>💬 Bangun Sistem CS Otomatis Tanpa Coding</h1>
+      <p>Tanpa Ribet — Cocok untuk Pemula, UMKM, & Pelajar!</p>
+      <img src="https://i.postimg.cc/pdyV8QB9/Whats-App-Image-2025-07-09-at-19-49-05-3.jpg" alt="Diagram AI CS" class="hero-img" />
+      <a href="https://wa.me/6281234567890" class="cta-button">
+        <span>➡️➡️</span> 📲 bergabung
+      </a>
     </section>
 
-    <section>
+    <section class="learning-section">
       <h2>📚 Apa yang Akan Kamu Pelajari?</h2>
       <ul>
-        <li>Belajar dari nol: tidak perlu pengalaman coding sama sekali</li>
-        <li>Langkah demi langkah: semua panduan dijelaskan secara praktis</li>
-        <li>Bangun sistem CS otomatis dengan tool seperti n8n</li>
-        <li>Catat keuangan dan operasional bisnis secara otomatis</li>
-        <li>Cocok untuk kebutuhan pribadi, UMKM, atau freelance</li>
+        <li>✅ Kamu gak butuh pengalaman atau skill teknis.</li>
+        <li>✅ Semua sudah disiapkan langkah demi langkah.</li>
+        <li>💡 Materinya langsung praktik — dari nol sampai bisa.</li>
+        <li>✅ Kamu akan belajar cara kerja sistem CS otomatis modern, cocok untuk kebutuhan pribadi, bisnis, atau bahkan jadi jasa.</li>
+        <li>📌 Semua materi hanya dibuka setelah kamu bergabung.</li>
+        <li>❌ Jadi kalau kamu cuma mau lihat-lihat, kelas ini bukan buat kamu.</li>
+        <li>✅ Tapi kalau kamu serius mau belajar & dapet hasil nyata, ini saatnya mulai.</li>
       </ul>
     </section>
 
-    <div class="section-image">
-      <img src="https://i.postimg.cc/pdyV8QB9/Whats-App-Image-2025-07-09-at-19-49-05-3.jpg" alt="diagram alur sistem" />
-    </div>
+    <div class="divider"></div>
 
-    <section>
-      <h2>🚀 Siapa yang Cocok Ikut?</h2>
-      <ul>
-        <li>Pemilik UMKM yang ingin hemat waktu & tenaga</li>
-        <li>Freelancer yang ingin tambah skill digital</li>
-        <li>Pelajar yang ingin belajar skill masa depan</li>
-        <li>Siapa pun yang ingin kerja lebih efisien pakai sistem</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>⚠️ Kelas Ini Bukan untuk Kamu Kalau…</h2>
-      <ul>
-        <li>Kamu hanya ingin "lihat-lihat"</li>
-        <li>Tidak siap untuk belajar dan praktik</li>
-        <li>Cari sistem instan tanpa usaha</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🛎️ Pilih Cara Gabung Sesuai Kebutuhanmu</h2>
+    <section class="join-section">
+      <h2>🔔 Pilih Cara Gabung Sesuai Kebutuhanmu</h2>
       <div class="btn-group">
-        <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F" class="btn-wa">✅ Daftar Kelas Premium via WhatsApp</a>
-        <a href="https://discord.gg/YgSpW9dm" class="btn-discord">💬 Gabung Komunitas di Discord</a>
+        <a href="https://wa.me/6281234567890" class="btn-wa">✅ Daftar Kelas Premium via WhatsApp</a>
       </div>
     </section>
 
-    <section>
-      <h2>❓ FAQ — Pertanyaan Umum</h2>
-      <ul>
-        <li>Gaptek bisa ikut? ✅ Bisa banget! Kelas ini memang untuk pemula total.</li>
-        <li>Harus pakai laptop? ✅ Iya, karena tools seperti n8n lebih nyaman digunakan di laptop/PC.</li>
-        <li>Akses materi sampai kapan? ✅ Seumur hidup. Bebas belajar kapan saja.</li>
-      </ul>
+    <div class="divider"></div>
+
+    <section class="closing-section">
+      <h2>🔔 Gabung Sekarang Sesuai Kebutuhan Kamu</h2>
+      <p>📌 Serius mau belajar dan gabung ke Kelas Premium?<br>
+      Langsung daftar lewat WhatsApp — semua materi lengkap dibuka</p>
     </section>
 
-    <div class="footer">
-      🔗 Powered by: jawabin.id<br />
-      📷 Instagram: @abdul_azizramadhani<br />
-      📞 WhatsApp: 0831-8429-2667
-    </div>
-  </div>
+    <div class="divider"></div>
+
+    <section class="discord-section">
+      <p class="discord-invite">
+        Belum siap ikut kelas premium?<br>
+        💬 <strong>Gabung Komunitas Diskusi Gratis di Discord</strong> — Klik di bawah ini:
+      </p>
+      <div class="btn-group">
+        <a href="https://discord.gg/Jp2SUG4V" class="btn-discord">💬 Gabung Komunitas di Discord</a>
+      </div>
+    </section>
+  </main>
 
   <script>
     const sections = document.querySelectorAll('section');
