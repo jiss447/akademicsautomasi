@@ -2,66 +2,113 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Akademi CS Otomatis</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS Otomatis | jawabin.id</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: 80px auto;
+      padding: 0 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #00ffff;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .cta-buttons a {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .cta-buttons a.discord {
+      background-color: #5865F2;
+    }
+
+    .cta-buttons a:hover {
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="https://i.ibb.co/zTRTm8LP/Screenshot-257.png" alt="Logo" class="logo">
-    <div class="auth-buttons">
-      <a href="#" class="btn login">Log in</a>
-      <a href="#" class="btn signup">Sign Up</a>
-    </div>
-  </header>
 
-  <section class="hero">
-    <h1><span>💬 Bangun Sistem CS Otomatis</span><br>Tanpa Coding</h1>
-    <p>Tanpa Ribet — Cocok untuk Pemula, UMKM, & Pelajar!</p>
-    <p>Bangun sistem customer service otomatis tanpa harus jago coding. Semua materi langsung praktik, cocok untuk siapa pun yang ingin belajar!</p>
-
-    <div class="cta">
-      <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F" class="btn join">👉 Gabung via WhatsApp</a>
-      <a href="https://discord.gg/YgSpW9dm" class="btn discord">👉 Gabung Komunitas Discord</a>
-    </div>
-
-    <img src="https://i.ibb.co/fBzvnF3/Whats-App-Image" alt="Chart" class="chart">
-  </section>
-
-  <section class="why-different">
+  <!-- Bagian konten yang muncul dengan animasi -->
+  <div class="section" id="kenapa">
     <h2>🔥 Kenapa Kelas Ini Berbeda?</h2>
-    <ul>
-      <li>✅ Tidak butuh skill teknis apa pun</li>
-      <li>✅ Langsung praktik dari awal — bukan teori</li>
-      <li>✅ Cocok untuk semua jenis bisnis (UMKM, freelancer, pelajar, dll.)</li>
-      <li>✅ Materi selalu di-update + akses seumur hidup</li>
-      <li>✅ Didampingi langsung via WhatsApp & Discord (GRATIS)</li>
-    </ul>
-  </section>
+    <p>✅ Tanpa skill teknis<br>
+       ✅ Langsung praktik dari awal<br>
+       ✅ Cocok untuk semua jenis bisnis<br>
+       ✅ Materi update + akses seumur hidup<br>
+       ✅ Didampingi via WhatsApp & Discord (GRATIS)
+    </p>
+  </div>
 
-  <section class="learn-section">
-    <h2>📚 Apa yang Akan Kamu Pelajari?</h2>
-    <ul>
-      <li>💡 Belajar dari nol — langsung praktik, bukan cuma nonton teori</li>
-      <li>💡 Pahami cara kerja sistem CS otomatis modern</li>
-      <li>💡 Cocok untuk kebutuhan pribadi, bisnis, atau jadi jasa freelance</li>
-    </ul>
-  </section>
+  <div class="section" id="belajar">
+    <h2>📚 Apa yang Akan Kamu Pelajari</h2>
+    <p>💡 Bangun sistem CS otomatis & pencatatan keuangan<br>
+       💡 Semua langkah disusun step-by-step<br>
+       💡 Belajar dari nol, langsung praktik<br>
+       💡 Cocok untuk bisnis pribadi atau jasa freelance
+    </p>
+  </div>
 
-  <section class="closing">
-    <p>📌 Seluruh materi hanya dibuka untuk peserta yang sudah bergabung.<br>
-      Kalau kamu cuma ingin lihat-lihat, kelas ini bukan untukmu.<br>
-      Tapi kalau kamu serius mau belajar dan dapat hasil nyata — inilah waktunya!</p>
+  <div class="section" id="cta">
+    <h2>🛎️ Siap Gabung?</h2>
+    <p>Langsung daftar dan dapatkan akses ke semua materi + komunitas aktif!</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F">Gabung via WhatsApp</a>
+      <a href="https://discord.gg/YgSpW9dm" class="discord">Gabung Discord</a>
+    </div>
+  </div>
 
-    <h3>🛎️ Gabung Sekarang Sesuai Kebutuhanmu</h3>
-    <a href="https://wa.me/6283184292667?text=Halo%20kak%2C%20saya%20mau%20daftar%20kelas%20premium%20gimana%20caranya%3F" class="btn join">👉 Klik untuk Gabung via WhatsApp</a>
-    <a href="https://discord.gg/YgSpW9dm" class="btn discord">👉 Atau masuk Komunitas Discord</a>
-  </section>
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
 
-  <footer>
-    <p>🔗 Powered by: jawabin.id</p>
-    <p>📱 Instagram: <a href="https://instagram.com/abdul_azizramadhani">@abdul_azizramadhani</a></p>
-    <p>📞 WhatsApp: 0831-8429-2667</p>
-  </footer>
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+
 </body>
 </html>
